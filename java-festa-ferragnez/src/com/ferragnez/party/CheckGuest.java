@@ -26,12 +26,12 @@ public class CheckGuest {
                 invitatoPresente = true;
             }
 
-            if (invitatoPresente) {
-                System.out.println("Puoi entrare alla festa");
-            } else {
-                System.out.println("non puoi entrare alla festa. Non sei sulla lista degli invitati");
-            }
+        }
 
+        if (invitatoPresente) {
+            System.out.println("Puoi entrare alla festa");
+        } else {
+            System.out.println("non puoi entrare alla festa. Non sei sulla lista degli invitati");
         }
 
         // chiudo lo scanner
