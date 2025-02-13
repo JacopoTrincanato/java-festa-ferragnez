@@ -22,7 +22,7 @@ public class CheckGuest {
         for (int i = 0; i < invitati.length; i++) {
 
             // se il nome è presente nella lista, allora lascio entrare l'invitato
-            if (invitati[i].equals(nomeInvitato)) {
+            if (invitati[i].equalsIgnoreCase(nomeInvitato)) {
                 invitatoPresente = true;
                 break;
             }
