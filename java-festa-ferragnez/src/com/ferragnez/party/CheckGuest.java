@@ -24,6 +24,7 @@ public class CheckGuest {
             // se il nome è presente nella lista, allora lascio entrare l'invitato
             if (invitati[i].equals(nomeInvitato)) {
                 invitatoPresente = true;
+                break;
             }
 
         }
