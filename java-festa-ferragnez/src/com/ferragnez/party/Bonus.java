@@ -1,9 +1,8 @@
 package com.ferragnez.party;
 
-//importo lo scanner
 import java.util.Scanner;
 
-public class CheckGuest {
+public class Bonus {
     public static void main(String[] args) {
 
         // creo l'array con il nome degli invitati
@@ -20,14 +19,21 @@ public class CheckGuest {
         // creo una variabile per verificare se l'invitato è presente
         boolean invitatoPresente = false;
 
-        // uso il ciclo for nell'array per cercare il nome nella lista
-        for (int i = 0; i < invitati.length; i++) {
+        // uso il ciclo while nell'array per cercare il nome nella lista
 
-            // // se il nome è presente nella lista, allora setto invitatoPresente su true
+        // creo la variabile contatore
+        int i = 0;
+
+        while (!invitatoPresente && i < invitati.length) {
+
+            // se il nome è presente nella lista, allora setto invitatoPresente su true
             if (invitati[i].equalsIgnoreCase(nomeInvitato)) {
                 invitatoPresente = true;
                 break;
             }
+
+            // altrimenti incrementa il contatore
+            i++;
 
         }
 
